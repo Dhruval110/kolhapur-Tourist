@@ -1,0 +1,314 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #121212;
+  min-height: 100vh; /* Ensure the body takes up full height */
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  padding-top: 10px;
+}
+.grid-item {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+  transition: box-shadow 0.3s ease, transform 0.5s ease; /* Smooth transition for shadow and scaling */
+  text-align: center;
+}
+
+.tourist-grid p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  transform: scale(1.05); /* Scale effect for hover */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1); /* Zoom the image slightly on hover */
+}
+.tourist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-template-rows: 300px 300px; /* Two rows of equal height */
+  gap: 20px; /* Space between items */
+  max-width: 1200px; /* Max width for the grid */
+  width: 90%; /* Responsive grid width */
+  padding-right: 40px;/* Ensure the body takes up full height */
+  padding-left: 100px;
+}  /* Hover Effects */
+  .grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.5s ease;
+  }
+  
+  .grid-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .overlay span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.5s ease;
+    z-index: 2; /* Keep the overlay in front of the background */
+  }
+  
+  .tourist-grid {
+   /* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; /* Dark background for the body */
+  color: #ffffff; /* Light text for readability */
+  min-height: 100vh;
+}
+
+/* Tourist Grid */
+.tourist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between items */
+  max-width: 1200px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* Grid Items */
+.grid-item {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #1e1e1e; /* Dark background for items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for dark theme */
+  transition: box-shadow 0.3s ease, transform 0.5s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Deeper shadow on hover */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Overlay for Text */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); /* Transparent dark overlay */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 10px;
+  transition: background 0.5s ease;
+  z-index: 2; /* Ensure overlay stays above the background */
+}
+
+.grid-item:hover .overlay {
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay on hover */
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.overlay span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #ffa726; /* Accent color for added emphasis */
+}
+
+/* Individual Sections with Background Images */
+.Rautwadi,
+.Panhala,
+.Rankala,
+.Temple {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.Rautwadi {
+  background: url('./assets/amba-ghat-trekking-transformed.jpeg') no-repeat center center;
+}
+
+.Panhala {
+  background: url('./assets/images_\(1\)-1IQyhOom2-transformed-transformed.jpeg') no-repeat center center;
+}
+
+.Rankala {
+  background: url('./assets/Rankala-Lake.webp') no-repeat center center;
+}
+
+.Temple {
+  background: url('./assets/temple-transformed-transformed.jpeg') no-repeat center center;
+}
+
+/* Utility: Dark Theme Accent Styles */
+a {
+  color: #ffa726; /* Accent orange for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff9800; /* Slightly brighter accent on hover */
+}
+
+button, .btn {
+  background: #ffa726; /* Accent color for buttons */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: #ff9800; /* Slightly brighter on hover */
+  transform: translateY(-2px); /* Hover lift effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tourist-grid {
+      gap: 15px; /* Adjust grid gap */
+  }
+
+  .grid-item {
+      height: 250px; /* Smaller item height */
+  }
+
+  .overlay h3 {
+      font-size: 1.2rem;
+  }
+
+  .overlay span {
+      font-size: 1rem;
+  }
+}
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px 0;
+  }
+  
+  .grid-item {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.5s ease;
+  }
+  
+  .grid-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .overlay span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@1,700&display=swap');
+
+/* General Footer Styles */
+.footer {
+    background-color: #222; /* Darker background */
+    color: #ffffff; /* Bright white text for contrast */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer Content Styling */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+/* Footer Content Styling */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Footer Branding Section */
+  .footer-branding {
+    flex: 0.5; /* Takes up available space */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Makes the branding section flexible */
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: flex-start; /* Aligns to the left */
+  }
+  
+  /* Logo Section */
+  .footer-branding .logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #F25939;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffff; /* Highlighted brand color */
+    margin-bottom: 10px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    color: #dddddd; /* Slightly dimmed text for secondary content */
+    max-width: 300px; /* Limit description width for better alignment */
+  }
+  
+  
+  /* Quick Links Section */
+  .footer-links h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #F25939;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Newsletter Section */
+  .footer-newsletter h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-newsletter p {
+    color: #dddddd;
+    font-size: 14px;
+  }
+  
+  .email-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+  .email-input::placeholder {
+    color: #aaaaaa;
+  }
+  
+  .subscribe-btn {
+    padding: 10px 20px;
+    background-color: #F25939;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Contact Section */
+  .footer-contact h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    color: #dddddd;
+  }
+  
+  .footer-contact a {
+    color: #F25939;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact i {
+    margin-right: 5px;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+  

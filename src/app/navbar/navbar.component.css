@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@1,700&display=swap');
+
+
+.logo{
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #F25939;
+    padding-left: 20px;
+}
+.logo .url{
+    padding-right: 20px;
+}
+.url{
+    text-align: center;
+
+}
+.url li{
+    list-style: none;
+    display: inline-block;
+    padding: 32px;
+}
+
+.li button{
+    
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        background-color: transparent;
+        color: white;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+.li button {
+    background: transparent; /* Transparent background */
+    border: none; /* Remove border or outline */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    cursor: pointer; /* Ensure pointer cursor for better user feedback */
+}
+
+.login-signup li{
+    list-style: none;
+    display: inline-block;
+    padding: 32px;
+    align-items: flex-end;
+}
+
+.navbar {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar ul li a:hover {
+    background-color:transparent; /* Optional: Add hover effect */
+}
+
+/* Active link styles */
+.navbar ul li a.active {
+     /* Add a border around the active link */
+    color: #F25939; /* Text color matches the border */
+     /* Rounded corners */
+    padding: 8px 12px; /* Adjust padding for proper spacing inside the border */
+    background-color: transparent; /* No background color */
+    transition: all 0.3s ease; /* Smooth transition for hover or state changes */
+}
+/* Adjusted Button Styles */
+.url button {
+    background-color:transparent; /* Add a vibrant background color for buttons */
+    border: none; /* Remove border */
+    color: white; /* Keep text color white */
+    padding: 10px 20px; /* Add padding for a better clickable area */
+    font-size: 18px; /* Adjust font size */
+    font-family: "Inter", sans-serif; /* Consistent font */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.url button:hover {
+    background-color: #FF6347; /* Slightly lighter color on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.url button:active {
+    transform: scale(0.95); /* Slight zoom-out effect on click */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin-top: 100px; /* Adjust according to your navbar height */
+}
+
+/* Fixed Navbar Styles */
+
+
+
+
+.url ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.url li {
+  padding: 20px;
+  display: inline-block;
+}
+
+.url li a, .url li button {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.url button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.url li a.active {
+  color: #F25939;
+}
+
+.login-signup ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.login-signup li {
+  padding: 20px;
+}
+
+/* Content Section Below Navbar */
+main {
+  margin-top: 120px; /* This value should be more than or equal to the navbar height */
+  padding: 20px;
+}
+
+/* Active link styles */
+.navbar ul li a.active {
+  color: #F25939;
+  background-color: transparent;
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .url ul, .login-signup ul {
+    flex-direction: column;
+  }
+
+  .url li, .login-signup li {
+    padding: 5px 0;
+  }
+}

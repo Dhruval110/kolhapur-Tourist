@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Poppins:wght@100;200;300;400&display=swap');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+/* Header Styles */
+header {
+    
+    padding-top: 150px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Overlay to Darken Background (Optional) */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+/* Content Wrapper to Ensure Content is Above Overlay */
+header > *:not(.navbar) {
+    position: relative;
+    z-index: 2;
+}
+
+/* Title Styles */
+.title {
+    font-size: 36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.title span {
+    font-size: 50px;
+    font-family: "Playwrite US Trad", serif;
+    font-weight: 400;
+    color: #f25939;
+}
+
+/* Main Styles */
+.main {
+    font-size: 120px;
+    letter-spacing: 8px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* General Info Styles */
+.info {
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: justify;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.detail-info {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+/* Styling the <ul> element */
+.detail-info ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Arrange items in a row */
+    gap: 15px; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for <li> elements */
+.detail-info ul li {
+    display: flex; /* Ensure elements align in a row */
+    align-items: center; /* Vertical alignment for items */
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Styling for links */
+.detail-info ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffff; /* Link color */
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+
+}
+
+/* Hover effect for links */
+
+
+/* Button Styles */
+.detail-info .button a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f25939;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+

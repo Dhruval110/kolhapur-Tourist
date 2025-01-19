@@ -1,0 +1,140 @@
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 50px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.navbar .logo {
+    font-size: 20px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Navigation Links Styles */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.navbar ul li a:hover {
+    color: #f25939;
+}
+
+/* Title Styles */
+.title {
+    font-size: 36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.title span {
+    font-size: 50px;
+    font-family: "Playwrite US Trad", serif;
+    font-weight: 400;
+    color: #f25939;
+}
+
+/* Main Styles */
+.main {
+    font-size: 120px;
+    letter-spacing: 8px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* General Info Styles */
+.info {
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: justify;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.detail-info {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+/* Styling the <ul> element */
+.detail-info ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Arrange items in a row */
+    gap: 15px; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for <li> elements */
+.detail-info ul li {
+    display: flex; /* Ensure elements align in a row */
+    align-items: center; /* Vertical alignment for items */
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Styling for links */
+.detail-info ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffff; /* Link color */
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+
+}
+
+/* Hover effect for links */
+
+
+/* Button Styles */
+.detail-info .button a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f25939;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+

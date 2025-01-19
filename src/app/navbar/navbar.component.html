@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <div class="logo">Kolhapur</div>
+  <div class="url">
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><button (click)="scrollToDestination()">Destination</button></li>
+      <li><button (click)="scrollToFAQs()">FAQs</button></li>
+      <li><button (click)="scrollToAboutUs()">About Us</button></li>
+      <li><button (click)="scrollToContactUs()">Contact Us</button></li>
+    </ul>
+  </div>
+  <div class="login-signup">
+    <ul>
+      <li *ngIf="!isLoggedIn">
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+      </li>
+      <li *ngIf="isLoggedIn">
+        <a routerLink="/profile" routerLinkActive="active">Profile</a>
+      </li>
+    </ul>
+  </div>
+</nav>
